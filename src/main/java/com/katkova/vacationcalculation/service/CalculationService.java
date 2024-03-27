@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculationService {
     public CalculationResultDto calculate(CalculationDto calculationDto) {
-        //логика
-        return new CalculationResultDto(calculationDto.getAvgSalary() + calculationDto.getVacationDays());
+        float result = calculationDto.getAvgSalary() / 29.3F * calculationDto.getVacationDays();
+        return new CalculationResultDto(result);
     }
 }
