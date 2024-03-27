@@ -16,11 +16,11 @@ class VacationCalculationApplicationTests {
 	@DisplayName("Вычисление отпускных")
 	void calculateTest() {
 		CalculationService service = new CalculationService();
-		CalculationDto calculations = new CalculationDto(50000.0F, 10);
+		CalculationDto calculations = new CalculationDto(50000.0, 10);
 
 		CalculationResultDto result = service.calculate(calculations);
 
-		Assertions.assertEquals(17064.846F, result.getResult());
+		Assertions.assertEquals(17064.85, result.getResult());
 	}
 
 }

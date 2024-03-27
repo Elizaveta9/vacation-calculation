@@ -8,5 +8,5 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class CalculationResultDto {
-    private Float result;
+    private Double result;
 }

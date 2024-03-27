@@ -8,6 +8,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class CalculationDto {
-    private Float avgSalary;
+    private Double avgSalary;
     private Integer vacationDays;
 }
